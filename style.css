@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://emerj.com/wp-content/uploads/2018/10/ai-for-government-and-ngo-social-good-initiatives-an-interview-with-the-wadhwani-institute.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul{
+    display: inline-flex;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-shadow: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:hsla(147, 99%, 49%, 0.699);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.sub-menu{
+    display: none;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+.Know-More-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.Know-More-btn:hover{
+    border: 1px solid hsla(147, 99%, 49%, 0.699);
+    background: hsla(147, 99%, 49%, 0.699);
+    transition: 1s;
+}
+
+/*---Blood Banks---*/
+.blood-banks{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p1{
+    color: rgb(0, 0, 0);
+    font-size: 14;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+ 
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    flex: 30%;
+    justify-content: space-between;
+}
+.banks-col{
+    flex-basis: 48%;
+    background: rgb(214, 255, 248);
+    border-radius: 1%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    height: 200px;
+    transition: 00.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.banks-col:hover{
+    box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+}
+
+/*---------Our Camps--------*/
+.camps{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.camp-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.camp-col img{
+    width: 100%;
+    display: block;
+
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: hsla(147, 99%, 49%, 0.699);
+    transition: 0.7s;
+}
+.layer h3{
+    width: 100%;
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+
+}
+.layer:hover h3{
+    bottom: 50%;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 30px;
+    
+}
+.background{
+    margin-top: 5%;
+    margin-left: 9%;
+    height: 100vh;
+    border-radius: 10px;
+   position: absolute;
+}
+.inquiry{
+    min-height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(113, 114, 119, 0.7),rgba(4,9,30,0.7)),url(image/register.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form{
+    width: 400px;
+    margin: 50px 10px 10px auto;
+}
+.form h2{
+    text-align: center;
+    margin-left: -150px;
+    padding: 30px;
+    font-family: sans-serif;
+
+}
+.register{
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 89%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.3);
+    margin : 50px;
+}
+form#register{
+    margin: 40px;
+}
+label{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+}
+inout#name{
+    width: 300pc;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
